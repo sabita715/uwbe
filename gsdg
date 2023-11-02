@@ -1,0 +1,5 @@
+if (typeof window.ethereum !== 'undefined') {
+  window.ethereum.request({ method: 'eth_requestAccounts' });
+} else {
+  console.log('Metamask is not detected. Please install and unlock it.');
+}
